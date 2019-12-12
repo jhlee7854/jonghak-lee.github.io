@@ -10,7 +10,7 @@ tagline:             ''
 description:         ''
 url:                 https://jonghak-lee.github.io
 baseurl:             ''
-paginate:            5
+paginate:            1
 plugins:             [jekyll-paginate]
 
 # About/contact
