@@ -6,7 +6,7 @@ categories: blog
 tags: azure aks kubernetes
 comments: true
 ---
-AKS의 Worker Node는 Cluster의 생성, 업그레이드, 패치, 모니터링 등을 위한 kube-apiserver와의 통신, Node 생성을 위한 OS Image, Cluster 구성을 위한 Container Image 등이 필요하므로 Azure Global Service 및 클러스터 생생에 필요한 Service로의 Outbound가 필요하다.
+AKS의 Worker Node는 Cluster의 생성, 업그레이드, 패치, 모니터링 등을 위한 kube-apiserver와의 통신, Node 생성을 위한 OS Image, Cluster 구성을 위한 Container Image 등이 필요하므로 Azure Global Service 및 클러스터 생성에 필요한 Service로의 Outbound가 필요하다.
 
 AKS의 Outbound Type은 AKS를 생성할 때 지정할 수 있으며, `Load Balancer Type`과 `User Defined Route Type`으로 나뉜다.
 
@@ -30,7 +30,7 @@ AKS를 생성할 때 Outbound Type을 User Defined Route Type으로 설정하면
 
 ![클러스터 egress 트래픽에 대한 제한과 제어](https://docs.microsoft.com/en-us/azure/aks/media/limit-egress-traffic/aks-azure-firewall-egress.png)
 
-또한 Virtual Appliance가 Azure Firewall이라면 모든 트랙픽이 Firewall을 통과해야 하므로 Firewall Policy에 AKS와 관련된 Outbound 정책 설정이 필요하다. 이와 관련된 내용은 다음 링크를 참조한다.
+또한 Virtual Appliance가 Azure Firewall이라면 모든 트래픽이 Firewall을 통과해야 하므로 Firewall Policy에 AKS와 관련된 Outbound 정책 설정이 필요하다. 이와 관련된 내용은 다음 링크를 참조한다.
 
 [AKS Cluster를 위한 필수 Outbound 네트워크 규칙 및 FQDN](https://docs.microsoft.com/en-us/azure/aks/limit-egress-traffic#required-outbound-network-rules-and-fqdns-for-aks-clusters)
 
